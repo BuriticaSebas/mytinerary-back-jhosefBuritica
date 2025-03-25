@@ -6,7 +6,7 @@ const routeCity = Router()
 
 routeCity.get("/allCities", allCities)
 
-routeCity.get("/cityById", cityById)
+routeCity.get("/cityById/:IdCity", cityById)
 
 routeCity.post("/createOnecity", createOnecity)
 

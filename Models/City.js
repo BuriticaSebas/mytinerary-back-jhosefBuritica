@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-
+import "../configBD/connectDb.js"
 
 
 const collection = "City";
