@@ -15,7 +15,8 @@
   "devDependencies": {},
   "scripts": {
     "dev": "nodemon server.js",
-    "data": "node Models/Data/cityData.js"
+    "data": "node Models/Data/cityData.js",
+    "host": "nodemon"
   },
   "repository": {
     "type": "git",

@@ -28,8 +28,7 @@ server.use(error400)
 server.use(error500)
 
 
-
-server.listen(port, ()=>{
-    console.log(`Ya estoy esperando solicitues en el puerto ${port}`)
-})
-
+//Esto esta asi para poder probar la app desde mi celular, es decir, que el servidor sea accesible desde mi red local
+server.listen(port, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+  });
