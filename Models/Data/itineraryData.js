@@ -7,7 +7,7 @@ const ItineraryData = [
     {
       imgUser: "https://randomuser.me/api/portraits/men/32.jpg",
       nameUser: "Carlos Gomez",
-      precio: 150,
+      price: 150,
       duration: 2,
       likes: 24,
       hashtags: ["aventura", "historia"],
@@ -17,7 +17,7 @@ const ItineraryData = [
     {
       imgUser: "https://randomuser.me/api/portraits/women/45.jpg",
       nameUser: "Lucia Fernandez",
-      precio: 90,
+      price: 90,
       duration: 1,
       likes: 15,
       hashtags: ["gastronomía", "cultura"],
@@ -27,7 +27,7 @@ const ItineraryData = [
     {
       imgUser: "https://randomuser.me/api/portraits/men/11.jpg",
       nameUser: "Julian Rios",
-      precio: 220,
+      price: 220,
       duration: 3,
       likes: 32,
       hashtags: ["naturaleza", "fotografía"],

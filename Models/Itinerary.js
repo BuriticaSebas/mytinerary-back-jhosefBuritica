@@ -6,7 +6,7 @@ const schema = new Schema(
   {
     imgUser: { type: String, required: true },
     nameUser: { type: String, required: true },
-    precio: { type: Number, required: true },
+    price: { type: Number, required: true },
     duration: { type: Number, required: true },
     likes: { type: Number, required: true },
     hashtags: { type: [String], required: true },
