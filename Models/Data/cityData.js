@@ -158,5 +158,3 @@ let cityData = [
   
 CityModel.insertMany(cityData)
 
-
-  console.log("aca voy")
