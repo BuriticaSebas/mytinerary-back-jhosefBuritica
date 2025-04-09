@@ -9,9 +9,9 @@ const routerItinerary = Router()
 
 routerItinerary.post("/create", create)
 
-routerItinerary.post("/update", updateIti)
+routerItinerary.put("/update", updateIti)
 
-routerItinerary.post("/deleteIti", deleteIti)
+routerItinerary.delete("/deleteIti", deleteIti)
 
 routerItinerary.get("/allItineraries" ,allItineraries)
 
