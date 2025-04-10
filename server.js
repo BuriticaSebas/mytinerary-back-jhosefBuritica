@@ -23,6 +23,10 @@ server.use(cors())
 
 server.use(routeMain);
 
+server.get("/rutaPrueba", (req, res) => {
+  res.send("Hola recibí la solicitud")
+});
+
 server.use(error404)
 server.use(error400)
 server.use(error500)

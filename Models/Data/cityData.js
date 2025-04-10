@@ -156,5 +156,12 @@ let cityData = [
   ];
 
   
-CityModel.insertMany(cityData)
 
+
+try {
+
+  CityModel.insertMany(cityData).then(()=> { console.log("Se agrego satisfactoriamente"); process.exit()})
+  
+} catch (error) {
+  console.log(error)
+}

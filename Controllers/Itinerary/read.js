@@ -40,7 +40,7 @@ const byCiudad = async (req, res, next) => {
 
     //     const dataQuery = await Itinerary.findOne({city: findCity._id}).populate('city', 'name').exec()
 
-    const dataQuery = await Itinerary.findOne({ city: valorQuery })
+    const dataQuery = await Itinerary.find({ city: valorQuery })
       .populate("city", "name")
       .exec();
     return res.status(200).json({

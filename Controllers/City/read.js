@@ -1,6 +1,6 @@
 import City from "../../Models/City.js"
 
-const allCities = async (req,res)=>{
+const allCities = async (req,res, next)=>{
     try {
 
         const allData = await City.find()
@@ -16,7 +16,7 @@ const allCities = async (req,res)=>{
 
 
 
-const cityById = async(req,res) =>{
+const cityById = async(req,res, next) =>{
 
 
     try {

@@ -12,6 +12,7 @@ const schema = new Schema(
     hashtags: { type: [String], required: true },
     comments: { type: [String] }, 
     city: { type: Schema.Types.ObjectId, ref: "City", required: true },
+    title: {type:String, required:true}
   },
   {
     timestamps: true 
