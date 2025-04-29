@@ -9,11 +9,11 @@ const schema = new Schema(
     name: { type: String, required: true },
     country: { type: String, required: true },
     language: { type: String, required: true },
-    climate: { type: String, required: true }, // Clima promedio (ej. "Tropical", "Mediterráneo", etc.)
-    currency: { type: String, required: true }, // Moneda local
-    rating: { type: Number, default: 0 }, // Calificación promedio de turistas (de 1 a 5)
+    climate: { type: String, required: true }, 
+    currency: { type: String, required: true }, 
+    rating: { type: Number, default: 0 }, 
     imageUrl: { type: String, required: true },
-    bestTimeToVisit: { type: String, required: true }, // Mejor época para visitar
+    bestTimeToVisit: { type: String, required: true }, 
   },
   {
     timestamps:true
@@ -22,5 +22,5 @@ const schema = new Schema(
 
 const City = model(collection,schema)
 
-
 export default City
+

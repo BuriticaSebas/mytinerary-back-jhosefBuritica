@@ -15,6 +15,8 @@ const allItineraries = async (req, res, next) => {
   }
 };
 
+
+
 const byId = async (req, res, next) => {
   try {
     const valorQuery = req.params.idIti;
