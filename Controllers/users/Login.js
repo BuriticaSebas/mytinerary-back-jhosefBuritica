@@ -1,17 +1,27 @@
-import User from "../../Models/user.js";
+import User from "../../Models/User.js";
 
 export default async (req,res,next) => {
 
     console.log("esta es la request" , req.user)
     try {
-        await User.findOneAndUpdate(
+       const user =  await User.findOneAndUpdate(
             {email: req.user.email},
-            {online: true}
+            {online: true},
+            { new: true, projection: "-password" }
         )
         return res.status(200).json({
             success:true,
             message: "Signed In",
-            token: req.token
+            token: req.token,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                lastname: user.lastname,
+                urlPhoto: user.urlPhoto,
+                country: user.country,
+                online: user.online
+              },
         })
     } catch (error) {
         next(error)

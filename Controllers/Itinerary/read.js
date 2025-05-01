@@ -1,6 +1,7 @@
 import { response } from "express";
 import Itinerary from "../../Models/Itinerary.js";
 import City from "../../Models/City.js";
+import User from "../../Models/User.js";
 
 const allItineraries = async (req, res, next) => {
   try {
@@ -44,7 +45,11 @@ const byCiudad = async (req, res, next) => {
 
     const dataQuery = await Itinerary.find({ city: valorQuery })
       .populate("city", "name")
+      .populate("user")
       .exec();
+
+
+      console.log(dataQuery)
     return res.status(200).json({
       msg: "Excelente",
       response: dataQuery,

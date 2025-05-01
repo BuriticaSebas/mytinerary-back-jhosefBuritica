@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import mongoose,{ Schema, model } from "mongoose";
 
 let collection = "User"
 
@@ -16,6 +16,6 @@ let schema = new Schema(
     }
 )
 
-const User = model(collection,schema)
+const User = mongoose.models[collection] || model(collection, schema);
 
 export default User

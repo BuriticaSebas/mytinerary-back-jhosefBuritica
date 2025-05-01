@@ -1,6 +1,6 @@
 import "dotenv/config.js";
 import "../../configBD/connectDb.js";
-import User from "../user.js";
+import User from "../User.js";
 
 const UserData = [
   {
